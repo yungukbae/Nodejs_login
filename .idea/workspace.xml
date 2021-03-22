@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="792bfbe2-b959-43d8-a950-4e7bd6cd9578" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Dev_log/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dev_log/_config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dev_log/_data/navigation.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dev_log/assets/css/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dev_log/assets/js/lunr/lunr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dev_log/assets/js/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dev_log/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/.idea/blog.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/0d/f2a73b535c0814f72d72a8cdebb9dddd9a0ea7f63f673626031eacb360c472" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/11/6cd8d210c70db9cc1c10f7f1e4c6f876870636b203d5526eb85e3d4173de34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/5b/7663fe22385d40e9486ae6a58f29eed32fcc3b5b915faa5d566489603a9dc5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.jekyll-cache/Jekyll/Cache/Module/03/931a5df441e72cc5972f904496d985f95baf86cf498bbf2cec006c8826e7a5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.jekyll-cache/Jekyll/Cache/Module/68/cb7159bede6dde4e8be3c4bd20f664df9693ee0a6a571fbeb68a44329f6eb5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.jekyll-cache/Jekyll/Cache/Module/b3/ecf3a683f12ef35132183a4054ab6268e4d683b5c65c40ec1fa30c72507f9d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.jekyll-cache/Jekyll/Cache/Module/e4/803a4558ba4b693000bae4f799eda1aae58bd0ab53d3e08366344a59051d62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/194e0fb68e487293cba453e5abcf7c53e96a3aaa/_default.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/2dd466a0f7e800b8349e26b1c18956a6d2850c8d/_dark.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/2dd466a0f7e800b8349e26b1c18956a6d2850c8d/_default.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_api.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_normalize.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_parse.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_settings.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_su-math.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_su-validate.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_syntax-helpers.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_unprefix.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/3f0a3e37db1e9667528a42fff17cabed5dea6e16/_utilities.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/727a9f84c33d1c5694426c707e655992b27ba5ea/minimal-mistakes.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/73565228d18a0adca63b3d4ea27bdf575b4c7903/_susy-prefix.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/73565228d18a0adca63b3d4ea27bdf575b4c7903/_susy.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_animations.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_archive.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_base.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_buttons.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_footer.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_forms.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_masthead.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_mixins.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_navigation.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_notices.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_page.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_print.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_reset.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_search.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_sidebar.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_syntax.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_tables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_utilities.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/762b5463aecc160ebff1e9b005c91265851a588a/_variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/7a86b7392d3b48cee593f542bc966a76bb4bdeb4/_magnific-popup.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/7a86b7392d3b48cee593f542bc966a76bb4bdeb4/_settings.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/93f0bbaf8cc2627db53502c2981495dd14725c57/_breakpoint.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/93f0bbaf8cc2627db53502c2981495dd14725c57/_context.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/93f0bbaf8cc2627db53502c2981495dd14725c57/_helpers.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/93f0bbaf8cc2627db53502c2981495dd14725c57/_legacy-settings.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/93f0bbaf8cc2627db53502c2981495dd14725c57/_no-query.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/93f0bbaf8cc2627db53502c2981495dd14725c57/_parsers.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/93f0bbaf8cc2627db53502c2981495dd14725c57/_respond-to.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/93f0bbaf8cc2627db53502c2981495dd14725c57/_settings.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/a946e880981959d6b2fb464a3b24be2bdb3d4d9d/_default.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/d4899aa0eca7df8d0bf38fc58c65ef6c251ddd76/_default-pair.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/d4899aa0eca7df8d0bf38fc58c65ef6c251ddd76/_default.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/d4899aa0eca7df8d0bf38fc58c65ef6c251ddd76/_double-string.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/da2adc4b7939cb7544644258cd844bfc903e0aaf/_double.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/da2adc4b7939cb7544644258cd844bfc903e0aaf/_query.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/da2adc4b7939cb7544644258cd844bfc903e0aaf/_resolution.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/da2adc4b7939cb7544644258cd844bfc903e0aaf/_single.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/da2adc4b7939cb7544644258cd844bfc903e0aaf/_triple.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/.sass-cache/f4f885388a833e1fb98b1f5afe2cbf9f22a4b3cd/_resolution.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/_main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/lunr/lunr-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/lunr/lunr-gr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/lunr/lunr-store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/lunr/lunr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/lunr/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/main.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/plugins/gumshoe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/plugins/jquery.ba-throttle-debounce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/plugins/jquery.fitvids.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/plugins/jquery.greedy-navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/plugins/jquery.magnific-popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/plugins/smooth-scroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/assets/js/vendor/jquery/jquery-3.5.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/feed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/sitemap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/_site/staticman.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../custom blog/package-lock.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1q7CRuoxLGHh5J5vIOJIlietXzL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="792bfbe2-b959-43d8-a950-4e7bd6cd9578" name="Default Changelist" comment="" />
+      <created>1616421237446</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616421237446</updated>
+      <workItem from="1616421238759" duration="2221000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
