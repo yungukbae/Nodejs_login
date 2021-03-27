@@ -5,19 +5,21 @@ const bodyParser = require('body-parser');
 const {User} = require("./models/User");
 const mongoose = require('mongoose');
 
+const config = require('./config/key');
+
 //application/x-www-form-urlencodded <=이걸 분석해서 가져오는 코드
 app.use(bodyParser.urlencoded({extended: true}));
 
 //json형태로 가져올 수 있도록 한 것
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://yungukbae:qwe123@nodejsreactbasic.yyhbp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+mongoose.connect(config.mongoURI,{
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true, useFindAndModify: false
 }).then(() => console.log("MONGODB CONNECT SUCCESS!"))
     .catch(err => console.log(err));
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World! nodemon test')
 })
 
 app.post('/register',(req,res) => {
