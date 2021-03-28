@@ -63,17 +63,14 @@ userSchema.pre('save', function(next) { //화살표 펑션 사용시 에러남
 })
 
 
-userSchema.method.comparePassword = function(plainPassword, cb){
-
+userSchema.methods.comparePassword = function(plainPassword, cb){
     bcrypt.compare(plainPassword, this.password, function(err, isMatch) {
         if(err) return cb(err)
-
         cb(null,isMatch)
     })
-
 }
 
-userSchema.method.generateToken = function(cb) {
+userSchema.methods.generateToken = function(cb) {
 
     var user = this;
 
@@ -86,8 +83,26 @@ userSchema.method.generateToken = function(cb) {
     })
 }
 
+userSchema.statics.findByToken = function (token, cb) {
 
-// userSchema.method.comparePassword = function(plainPassword, cb) {
+    var user = this;
+
+    //토큰을 decode한다.
+    jwt.verify(token,'secretToken',function (err,decoded){
+        //유저 아이디를 이용해서 유저를 찾은 다음에
+        //클라이언트에서 가져온 token과 db에 보관된 토큰이 일치하는지 확인
+        user.findOne({"_id":decoded, "token":token}, function (err,user){
+            if(err) return cb(err);
+            cb(null, user)
+        })
+    })
+
+
+
+}
+
+
+// userSchema.methods.comparePassword = function(plainPassword, cb) {
 //
 //     //plainPassword Ex) 1234567 암호화된 비밀번호 $2b$10$5WKstWVOARTnrD2g0.pT.uHVdRSV2Ye6JiCIAOPAHr5iDSRCrXV/a
 //     bcrypt.compare(plainPassword, this.password, function(err, isMatch) {
@@ -96,7 +111,7 @@ userSchema.method.generateToken = function(cb) {
 //             cb(null, isMatch)
 //     })
 // }
-// userSchema.method.generateToken = function(cb) {
+// userSchema.methods.generateToken = function(cb) {
 //     var user = this;
 //
 //     //jsonwebtoken을 이용한 토큰 생성 user_id와 secretToken을 이용해 토큰을 생성한다 보면 된다.

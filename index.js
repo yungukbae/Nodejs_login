@@ -2,10 +2,13 @@ const express = require('express')
 const app = express()
 const port = 3000
 const bodyParser = require('body-parser');
-const { User } = require("./models/User");
+const { User } = require('./models/User');
+const { auth } = require('./middleware/auth');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const config = require('./config/key');
+
+
 
 //application/x-www-form-urlencodded <=이걸 분석해서 가져오는 코드
 app.use(bodyParser.urlencoded({extended: true}));
@@ -30,7 +33,7 @@ app.post('/register',(req,res) => {
     const user = new User(req.body)
 
     //save는 몽고디비 method, 괄호 안에는 콜백 펑션
-    user.save((err,userInfo) => {
+    user.save((err,user) => {
         //에러 발생시 성공하지 못했다고 에러메세지를 json형태로 전달.
         if(err) return res.json({success: false,err});
 
@@ -42,9 +45,9 @@ app.post('/register',(req,res) => {
 })
 
 
-app.post('/login',(req,res) => {
+app.post('/login',function(req,res) {
 
-    User.findOne({email:req.body.email,},(err,user) => {
+    User.findOne({email:req.body.email},function(err,user) {
 
         if(!user) {
             return res.json({
@@ -55,12 +58,12 @@ app.post('/login',(req,res) => {
 
 
 
-            user.comparePassword(req.body.password, function(err, isMatch) {
+            user.comparePassword(req.body.password, function(err, isMatch){
 
 
                 if (!isMatch) return res.json({loginSuccess: false, message: "비밀번호가 틀립니다."})
 
-                user.generateToken((err, user) => {
+                user.generateToken(function(err, user) {
                     if (err) return res.status(400).send(err);
 
                     res.cookie("x_auth", user.token)
@@ -72,6 +75,32 @@ app.post('/login',(req,res) => {
     })
 })
 
+
+app.get('/api/users/auth',auth, (req,res) => {
+
+    //여기까지 미들웨어를 통과해 왔다는 얘기는 Authentication이 true라는 뜻
+    res.status(200).json({
+        _id:req.user._id,
+        isAdmin: req.user.role === 0 ? false : true,
+        isAuth: true,
+        email: req.user.email,
+        name: req.user.name,
+        lastname: req.user.lastname,
+        role: req.user.role,
+        image: req.user.image
+    })
+})
+
+app.get('/api/users/logout',auth, (req,res) => {
+    User.findOneAndUpdate({_id: req.user._id},
+        {token: ""},
+        (err,user) => {
+        if(err) return res.json({success:false, err});
+        return res.status(200).send({
+            success:true
+        })
+        })
+})
 
 
 
