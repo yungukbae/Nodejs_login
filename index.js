@@ -2,9 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 const bodyParser = require('body-parser');
-const {User} = require("./models/User");
+const { User } = require("./models/User");
 const mongoose = require('mongoose');
-
+const cookieParser = require('cookie-parser');
 const config = require('./config/key');
 
 //application/x-www-form-urlencodded <=이걸 분석해서 가져오는 코드
@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //json형태로 가져올 수 있도록 한 것
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 mongoose.connect(config.mongoURI,{
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true, useFindAndModify: false
@@ -21,6 +22,7 @@ mongoose.connect(config.mongoURI,{
 app.get('/', (req, res) => {
     res.send('Hello World! nodemon test')
 })
+
 
 app.post('/register',(req,res) => {
 
@@ -39,6 +41,77 @@ app.post('/register',(req,res) => {
     })
 })
 
+
+app.post('/login',(req,res) => {
+
+    User.findOne({email:req.body.email,},(err,user) => {
+
+        if(!user) {
+            return res.json({
+                loginSuccess: false,
+                message: "이메일이 존재하지 않습니다"
+            })
+        }
+
+
+
+            user.comparePassword(req.body.password, function(err, isMatch) {
+
+
+                if (!isMatch) return res.json({loginSuccess: false, message: "비밀번호가 틀립니다."})
+
+                user.generateToken((err, user) => {
+                    if (err) return res.status(400).send(err);
+
+                    res.cookie("x_auth", user.token)
+                        .status(200)
+                        .json({loginSuccess: true, userId: user._id})
+
+                })
+            })
+    })
+})
+
+
+
+
+// app.post('/login',(req,res) => {
+//
+//     //요청된 이메일을 데이터베이스에서 있는지 찾는다.
+//     User.findOne({email:req.body.email}, function(err,user) {
+//         if(!user){
+//             return res.json({
+//                     loginSuccess:false,
+//                     message:"이메일을 찾을 수 없습니다."
+//                 }
+//             )
+//         }
+//
+//         //요청된 이메일이 데이터베이스에 있다면 비밀번호를 확인한다.
+//
+//
+//         user.comparePassword(req.body.password, (err,isMatch)=>{
+//
+//         if(!isMatch)
+//             return res.json({loginSuccess: false, message: "비밀번호가 틀립니다."})
+//
+//         //비밀번호 까지 맞다면 토큰을 생성하기.
+//         user.generateToken(function(err,user){
+//                 if(err) return res.status(400).send(err);
+//
+//             //토큰을 저장한다. Ex) 쿠키, 로컬스토리지 우선은 쿠키에 한다.
+//             res.cookie("x_auth",user.token)
+//                 .status(200)
+//                 .json({loginSuccess: true, userId: user._id});
+//             })
+//         })
+//     })
+// })
+
+
+
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
+

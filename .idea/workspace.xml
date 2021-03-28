@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="792bfbe2-b959-43d8-a950-4e7bd6cd9578" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/key.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -19,6 +16,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1q7CRuoxLGHh5J5vIOJIlietXzL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -53,7 +58,8 @@
       <workItem from="1616425093739" duration="1304000" />
       <workItem from="1616656118478" duration="3000" />
       <workItem from="1616668737918" duration="3001000" />
-      <workItem from="1616858105654" duration="913000" />
+      <workItem from="1616858105654" duration="6168000" />
+      <workItem from="1616901096155" duration="3203000" />
     </task>
     <servers />
   </component>
