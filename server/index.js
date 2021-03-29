@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 5000
 const bodyParser = require('body-parser');
 const { User } = require('./models/User');
 const { auth } = require('./middleware/auth');
@@ -26,6 +26,10 @@ app.get('/', (req, res) => {
     res.send('Hello World! nodemon test')
 })
 
+
+app.get('/api/hello',(req,res) => {
+    res.send("안녕하세요 ~ 이건 노드에서 보내는것! ");
+})
 
 app.post('/register',(req,res) => {
 
@@ -99,7 +103,7 @@ app.get('/api/users/logout',auth, (req,res) => {
         return res.status(200).send({
             success:true
         })
-        })
+    })
 })
 
 
