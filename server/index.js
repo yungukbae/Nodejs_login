@@ -49,7 +49,7 @@ app.post('/register',(req,res) => {
 })
 
 
-app.post('/login',function(req,res) {
+app.post('/api/users/login',function(req,res) {
 
     User.findOne({email:req.body.email},function(err,user) {
 
