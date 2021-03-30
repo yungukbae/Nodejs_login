@@ -1,2 +1,6 @@
 # Nodejs_X_React_login
-tool: webstorm
+tool: VScode
+
+Lang: javascript
+library: React
+Framework: express
