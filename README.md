@@ -2,5 +2,7 @@
 tool: VScode
 
 Lang: javascript
-library: React
+
+library: React,Redux
+
 Framework: express
