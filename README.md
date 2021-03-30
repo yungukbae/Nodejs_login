@@ -1,8 +1,8 @@
 # Nodejs_X_React_login
-tool: VScode
+Tool: VScode
 
 Lang: javascript
 
-library: React,Redux
+Library: React,Redux
 
 Framework: express
