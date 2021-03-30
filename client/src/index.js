@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './components/views/Navbar/Navbar';
 import 'antd/dist/antd'
 
 import {Provider} from 'react-redux';
