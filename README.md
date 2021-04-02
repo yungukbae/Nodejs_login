@@ -6,3 +6,5 @@ Lang: javascript
 Library: React,Redux
 
 Framework: express
+
+DB: MongoDB
